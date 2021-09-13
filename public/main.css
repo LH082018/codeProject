@@ -1,0 +1,224 @@
+/* The @import rule allows you to import a style sheet into another style sheet */
+/* Fonts - GoogleFont */
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Lato|Nunito+Sans:400,600);
+
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+/* navigation */
+.flex-sm-fill {
+	color: #51afa1;	
+	background-color: #02352d;
+}
+
+#home {
+	color: #02352d;
+	background-color: white;
+	/* opacity: 0.6; */
+}
+
+h1 {
+	font-size: 6em;
+	margin: .67em 0;
+	font-family: Abril Fatface, Times New Roman, sans-serif;
+	font-weight: 500;
+	line-height: 1.1;
+	color: #fdfefe;
+}
+
+h2,
+h3,
+h4 {
+	font-family: Abril Fatface, Times New Roman, Times, serif;
+	font-weight: 500;
+	line-height: 1.1;
+	color: #000;
+}
+.subtitle{
+	font-size: 1.5em;
+	font-family: Nunito Sans, Times New Roman, sans-serif;
+	color: #fdfefe;
+}
+p {
+	font-size: 1em;
+	font-family: Nunito Sans, Times New Roman, sans-serif;
+	color: #0c0e0e;
+}
+.background-image-container {
+	position: relative;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	padding: 12% 0;
+}
+
+/* header image overlay */
+.overlay {
+	background-color: rgba(245, 235, 235, 0.2);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #51afa1;
+	border-color: #8acfc5;
+}
+
+/* Font Awesome */
+.fa-container {
+	text-align: center;
+	color: #000;
+}
+.fa-container,
+p {
+	text-align: center;
+	color: #000;
+}
+
+ /* Section: Inspire */
+ .section-container {
+	padding: 80px 0;
+}
+.section-container-spacer {
+	margin-bottom: 30px;
+}
+.section-half-background-image-container {
+	position: relative;
+	background-color: #eee;
+	padding: 80px 0 100px;
+}
+/* .section-half-background-image-container .image-column {
+	display: none;
+} */
+
+.image-column,
+img{
+	width:100%;
+	height:100%;
+}
+.section-half-background-image-container .text-column {
+	padding: 20px;
+	position: relative;
+	left: 60%;
+	/* The stack level of the box */
+	z-index: 2;
+}
+
+/* New Section: Form */
+
+h2.text-center {
+	text-align: center;
+}
+.contact-form-container {
+	background-color: #fff;
+	position: relative;
+}
+
+.form-group{
+	padding: 1em;
+}
+
+.form-button{
+	padding-left:1em;
+}
+
+.checkbox-inline{
+	padding-left: 1em;
+}
+
+@media (min-width: 992px) {
+	.section-half-background-image-container .image-column {
+		position: absolute;
+		display: block;
+		top: 0;
+		/* The stack level of the box */
+		z-index: 0;
+		bottom: 0;
+		width: 50%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-label p {
+		display: flex;
+		color: #fff;
+		font-size: 7em;
+		font-family: Abril Fatface, Times New Roman, Times, serif;
+		position: absolute;
+		left: 50%;
+		/* The stack level of the box */
+		z-index: 2;
+		top: 0;
+		height: 100%;
+		text-transform: uppercase;
+		align-items: center;
+		width: 260px;
+		margin-left: -130px;
+		/* word-break: break-all; */
+	}
+}
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.card-img-top {
+	transition:all 1s;	
+}
+
+.card-img-top:hover {
+	transform: scale(1.1);	
+}
+
+.card-text {
+	font-size: 1em;
+	font-family: Nunito Sans, Times New Roman, sans-serif;
+	color: #0c0e0e;
+}
+
+/* footer section */
+.site-footer {
+	position: static;
+	left: 0;
+	bottom: 0;
+	height: 2.5rem;
+	width: 100%;
+	background-color: #5cbbad;
+	text-align: center;
+ } 
+
+
+
+/* Responsiveness */
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
